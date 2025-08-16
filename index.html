@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Awang Alfha</title>
+
+    <!-- Styles -->
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portofolio</a>
+      
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Proyek</a>
+            </li>
+          </ul>
+          <span class="theme-toggle ms-3" title="Ganti Tema">☀️</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero d-flex align-items-center">
+      <div
+        class="container text-center text-md-start d-flex flex-column flex-md-row align-items-center justify-content-between"
+      >
+        <div data-aos="fade-right">
+          <h1 class="display-5 fw-bold"><span class="typed"></span></h1>
+          <p class="lead mt-2">Pelajar SMK & Web Developer Pemula</p>
+          <a href="projects.html" class="btn btn-primary mt-3">Lihat Proyek</a>
+        </div>
+      <div data-aos="zoom-in" class="mt-4 mt-md-0 text-center">
+        <img
+          src="assets/Chibi Agnes Tachyon - Uma musume Pretty derby.jpg"
+          alt="Awang Alfha"
+          class="img-fluid profile-img"
+        />
+        <p class="lead mt-3">Indonesia, Kalimantan Timur</p>
+      </div>
+    </section>
+
+    <!-- Coding -->
+    <section id="coding" class="py-5 bg-dark text-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title text-center mb-4">Coding</h2>
+
+        <div class="code-card shadow-sm p-3 rounded-4 bg-gradient-dark">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="small opacity-75">script.js</span>
+            <button
+              class="btn btn-sm btn-outline-light copy-btn"
+              data-target="#snippet"
+            >
+              <i class="fa-regular fa-copy me-1"></i> Salin
+            </button>
+          </div>
+
+          <pre class="mb-0"><code id="snippet" class="language-javascript">
+const aku = {
+  nama: "Awang Alfha Fairuz Amien",
+  jurusan: "PPLG - SMK 7 Samarinda",
+  citaCita: "Menjadi programmer di perusahaan besar",
+  skill: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+};
+
+function mulaiNgoding() {
+  console.log(
+    `Halo, saya ${aku.nama}. Saat ini belajar ${aku.skill.join(", ")} ` +
+    `untuk mewujudkan cita-cita saya sebagai ${aku.citaCita}.`
+  );
+}
+
+mulaiNgoding();
+      </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <div class="contact-footer mt-4 text-center">
+      <p class="mb-2">Kontak :</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="mailto:alfhafairuz08@gmail.com" target="_blank" title="Email">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://github.com/Fhaa-art" target="_blank" title="GitHub">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://steamcommunity.com/id/Keyshaaaa/" target="_blank" title="Steam">
+          <i class="fa-brands fa-steam fa-2x"></i>
+        </a>
+        <a href="https://wa.me/6282254334950" target="_blank" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+      <p class="mb-0">
+        &copy; 2025 Awang Alfha Fairuz Amien • Terima kasih atas kunjungan Anda.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
